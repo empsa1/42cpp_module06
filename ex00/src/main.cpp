@@ -4,7 +4,14 @@ int main(int argc, char **argv)
 {
     if (argc == 2)
     {
-        ScalarConverter::convert(argv[1]);
+        try
+        {
+            ScalarConverter::convert(argv[1]);
+        }
+        catch (std::exception & e)
+        {
+            std::cout << e.what() << std::endl;
+        }
         return (EXITED_FUNC_WITH_SUCESS);
     }
     else

@@ -3,7 +3,7 @@
 
 /// Define macro to control debug mode
 #ifndef DEBUG_MODE
-#define DEBUG_MODE 0 // Set to 1 to enable debug mode by default
+#define DEBUG_MODE 0    // Set to 1 to enable debug mode by default
 #endif
 
 ///MACROS FOR FUNC RETURN VALUES MORE READABLE
@@ -50,7 +50,17 @@
 #define COPY_CONSTRUCTOR        "[Copy Constructor called]          "
 #define DESTRUCTOR              "[Destructor called]                "
 #define ASSIGMENT_OPERATOR      "[Assigment Operator called]        "
+#define INTEGER_CASE            "Inside integer case solver         "
+#define DOUBLE_CASE             "Inside double case solver          "
+#define SPECIAL_CASE            "Inside special case solver         "
+#define FLOAT_CASE              "Inside float case solver           "
+#define CHAR_CASE               "Inside char case solver            "
 #else
+#define CHAR_CASE               ""
+#define INTEGER_CASE            ""
+#define DOUBLE_CASE             ""
+#define SPECIAL_CASE            ""
+#define FLOAT_CASE              ""
 #define DEFAULT_CONSTRUCTOR     ""
 #define PARAMTER_CONSTRUCTOR    ""
 #define COPY_CONSTRUCTOR        ""

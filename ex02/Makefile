@@ -1,10 +1,10 @@
-SRC = src/ScalarConverter.cpp src/main.cpp
+SRC = src/main.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++
 RM = rm -f
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = Bureacrat
+NAME = base
 
 all: $(NAME)
 
