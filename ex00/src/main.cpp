@@ -1,11 +1,15 @@
-#include <iostream>
-#include "ScalarConverter.cpp"
+#include "../includes/ScalarConverter.hpp"  
 
-int main() {
-    std::cout << "Char conversion: " << ScalarConverter::convertChar("A") << std::endl;
-    std::cout << "Int conversion: " << ScalarConverter::convertInt("42") << std::endl;
-    std::cout << "Float conversion: " << ScalarConverter::convertFloat("3.14") << std::endl;
-    std::cout << "Double conversion: " << ScalarConverter::convertDouble("2.718") << std::endl;
-
-    return 0;
+int main(int argc, char **argv)
+{
+    if (argc == 2)
+    {
+        ScalarConverter::convert(argv[1]);
+        return (EXITED_FUNC_WITH_SUCESS);
+    }
+    else
+    {
+        std::cout << RED USAGE RESET;
+        return (EXITED_FUNC_WITH_ERROR);
+    }
 }
